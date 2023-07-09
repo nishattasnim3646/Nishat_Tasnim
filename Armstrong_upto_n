@@ -1,0 +1,17 @@
+#include<stdio.h> 
+
+int main(){
+    int n, i,tem, rem, sum=0;
+    scanf("%d",&n);
+    for(i=1;i<n;i++){
+    tem=i;
+    while(tem!=0){
+        rem=tem%10;
+        tem=tem/10;
+        sum=sum+rem*rem*rem;
+    }
+    if(sum==i) printf("%d ",i);
+    sum=0;
+    }
+    return 0;
+}
