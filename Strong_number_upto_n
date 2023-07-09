@@ -1,0 +1,23 @@
+#include<stdio.h> 
+
+int main(){
+
+    while(1){
+    int n,tem,sum=0,rem=0,i,fact=1,j;
+    scanf("%d",&n);
+    for(j=1;j<n;j++){
+    tem=j;
+    while(tem!=0){
+        rem=tem%10;
+        for(i=rem;i>1;i--){
+            fact=fact*i;
+        }
+        sum=sum+fact;
+        fact=1;
+        tem=tem/10;  
+    }
+    if(sum==j)
+        printf("%d is strong\n",j);
+    sum=0;}}
+    return 0;
+}
