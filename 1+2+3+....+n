@@ -1,0 +1,10 @@
+#include<stdio.h> 
+
+int main(){
+    int s=0,j,n;
+    scanf("%d",&n);
+    for(j=1;j<=n;j++){
+        s=s+j;}
+        printf("%d is the sum.\n",s);
+    return 0;
+}
