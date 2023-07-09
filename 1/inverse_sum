@@ -1,0 +1,10 @@
+int main(){
+    float s=0.0,n,i=1.0;
+    scanf("%f",&n);
+    while(i<=n){
+        s=s+1/i;
+        i++;
+    }
+    printf("%.1f\n",s);
+    return 0;
+}
