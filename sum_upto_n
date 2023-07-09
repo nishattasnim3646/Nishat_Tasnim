@@ -1,0 +1,13 @@
+#include<stdio.h> 
+
+int main(){
+    float s=0.0,n,i=1.5;
+    scanf("%f",&n);
+    while(i<=n){
+        s=s+i;
+        printf("%.1f ",i);
+        i++;
+    }
+    printf("\n%.1f\n",s);
+    return 0;
+}
